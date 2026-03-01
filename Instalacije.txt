@@ -31,6 +31,10 @@ cmake .. -A x64 -DCMAKE_TOOLCHAIN_FILE=C:/dev/vcpkg/scripts/buildsystems/vcpkg.c
 cmake --build . --config Release
 
 
+slika u .h preko git bash - xxd ima -i flag koji generira C header format direktno.
+
+xxd -i slika.png > slika.h
+
 
 zvukovi , u git bash ...
 
