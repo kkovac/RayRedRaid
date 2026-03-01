@@ -1,5 +1,8 @@
 
 
+git fetch --all
+
+git add . ; git commit -m ".sql update" ; git pull --rebase origin main ; git push origin main
 
 
 u external parent folderu izvršiti :
