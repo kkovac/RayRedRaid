@@ -1,11 +1,28 @@
 
+todo
+====
 
-git fetch --all
+readame je pretrpan
+redis - realtime chat i top lista igrača
+webapiclient ugraditi - nije da baš treba nego čisto demonstarcije radi (voditi log igranja , user + scor + dt)
+
+
+
+git help
+========
+
+git fetch --all # git fetch koristiš samo kad želiš prvo vidjeti što dolazi prije nego mergaš, bez iznenađenja.
+
+git diff RayRedRaid.cpp # usporedba
+
+git pull  # git pull — on interno radi fetch + merge u jednom koraku. 
 
 git add . ; git commit -m "readme" ; git pull --rebase origin main ; git push origin main
 
-git diff RayRedRaid.cpp
+ 
 
+external dependency
+===================
 
 u external parent folderu izvršiti :
 git clone https://github.com/raysan5/raylib.git
@@ -14,13 +31,9 @@ git clone https://github.com/openssl/openssl.git
 
 
 
-moraš instalirati posebno statičku varijantu za build u jedan exe
-
-cd C:\dev\vcpkg
-
-.\vcpkg install raylib:x64-windows-static
-
-
+build
+=====
+ 
 
 koristi BUILD.bat
 
@@ -35,6 +48,9 @@ cmake .. -A x64 -DCMAKE_TOOLCHAIN_FILE=C:/dev/vcpkg/scripts/buildsystems/vcpkg.c
 
 cmake --build . --config Release
 
+
+slike i zvukovi
+===============
 
 slika u .h preko git bash - xxd ima -i flag koji generira C header format direktno.
 
